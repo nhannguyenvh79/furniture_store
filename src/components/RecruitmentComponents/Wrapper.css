@@ -1,0 +1,21 @@
+.achievement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(146, 188, 231), rgb(226, 242, 178));
+}
+.achievement-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 80%;
+}
+.icon-item {
+    font-size: 30px;
+}
+.item {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}

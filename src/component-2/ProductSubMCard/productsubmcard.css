@@ -1,0 +1,147 @@
+.product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+    margin: 2rem;
+    max-width: 400px ;
+    border: 2px solid var(--whitefont-color);
+    border-radius: 10px;
+    background: var(--1st-color);
+    box-shadow: white 0px 8px 24px;
+}
+.product img {
+    max-width: 400px;
+    max-height: 500px;
+    object-fit: contain;
+    cursor: pointer;
+    padding: 0 2rem;
+}
+
+.not-found{
+    color: var(--whitefont-color);
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--whitefont-color);
+    text-align: start;
+}
+
+.product .rate i {
+    font-size: 15px;
+    color: #ffcd4e;
+    margin: 5px 5px 5px 0;
+}
+
+.product .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    color: var(--whitefont-color);
+    font-size: 20px;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.product-like {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    opacity: 0;
+    transition: 0.8s;
+}
+.product-like label {
+    background-color: red;
+    padding: 1px 10px;
+    font-size: 15px;
+    color: var(--whitefont-color);
+    border-radius: 50px;
+}
+
+.product-like ion-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: red;
+}
+.product-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.product-details h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.product-descrip p{
+    text-align: center;
+    font-size: 18px;
+    color: var(--whitefont-color)
+}
+.product-categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.product-categories p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid var(--2nd-color);
+    border-radius: 10px;
+    color: var(--1st-color);
+    background-color: #ffcd4e;
+    padding: 10px 10px;
+    margin: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.price h4 {
+    margin: 20px 0 10px;
+    padding: 0 2rem;
+    border: 2px solid var(--whitefont-color);
+    border-radius: 5px;
+    margin: 2rem 0;
+}
+
+.price button {
+    background: none;
+    color: var(--whitefont-color);
+    font-size: 20px;
+    transition: 0.5s;
+    border: 1px solid var(--whitefont-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+.price button:hover {
+    cursor: pointer;
+    background-color: var(--whitefont-color);
+    color: var(--2nd-color);
+    opacity: 1;
+    transition: 0.9s;
+}
+
+button.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 50%;
+}
+.product:hover .product-like {
+    opacity: 1;
+}

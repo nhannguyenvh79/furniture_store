@@ -1,0 +1,131 @@
+/* Topcontainer*/
+.designsubm-component {
+    background-color: var(--1st-color);
+}
+
+.designsubm-topcontainer {
+    background-color: var(--1st-color);
+    padding: 2rem 2rem;  
+    margin: 2rem;
+}
+
+.designsubm-intro {
+    margin: 4rem 2rem 2rem 4rem;
+    padding: 0 10rem;
+    width: 100%;
+}
+
+.designsubm-intro h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--whitefont-color);
+    font-weight: bold;
+}
+
+.designsubm-intro p {
+    text-align: justify;
+    color: var(--whitefont-color);
+    font-size: 20px;
+}
+
+/* Pagination */
+.designsubm-title {
+    height: 100px;
+    background: url('https://static3.bigstockphoto.com/9/4/3/large1500/349451008.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+}
+
+.designsubm-title h1 {
+    text-align: center;
+    padding: 25px;
+    color: var(--whitefont-color);
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.designsubm-pagination {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackfont-color);
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.designsubm-pagination-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: var(--whitefont-color);
+    width: 100%;
+}
+
+.designsubm-pagination-item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+.designsubm-page-button {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 1px solid var(--whitefont-color);
+    background-color: var(--whitefont-color);
+    color: var(--1st-color);
+}
+
+.designsubm-page-button:hover {
+    background-color: var(--1st-color);
+    color: #fff;
+}
+
+.designsubm-page-button[disabled] {
+    background-color: rgb(209, 199, 199);
+    color: var(--1st-color);
+}
+
+/* Question component */
+.accordation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    padding: 4rem;
+}
+
+
+@media (max-width: 768px) {
+    .designsubm-topcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+
+    .designsubm-intro h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .designsubm-title h1{
+        padding: 2rem;
+        font-size: 30px;
+    }
+    
+}

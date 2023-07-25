@@ -1,0 +1,45 @@
+.job-list-container{
+    height: fit-content;
+    flex-wrap: wrap;
+}
+.job-list-filter-container{
+    flex: 0 0 30%;
+    min-width: 400px;
+    padding: 20px ;
+}
+.job-list-filter{
+    height: 30vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: gray;
+}
+label {
+    font-weight: 600;
+}
+.job-list-content-container{
+    flex-wrap: wrap;
+    min-width: 400px;
+    padding: 20px ;
+}
+
+.job-list-content{
+    height: 80vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: scroll;
+    padding: 20px;
+}
+.job-list-content::-webkit-scrollbar-thumb {
+    background-color: rgb(217, 221, 226);
+    border-radius: 5px;
+}
+.job-list-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.job-list-filter-title , .job-list-content-title{
+    font-size: 18px;
+    color: brown;
+}

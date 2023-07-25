@@ -1,0 +1,71 @@
+.job-list-item{
+    margin: 10px 0px;
+    border-bottom: 1px solid grey;
+    padding: 20px;
+    transition: all ease-in-out 0.3s;
+}
+.job-list-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+.job-list-item h3{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+.job-list-item p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.job-list-item button {
+    padding:0px 10px ;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.job-list-item .action {
+    display: flex;
+    flex-direction: column;
+}
+.job-list-item .show-more{
+    color: rgb(15, 52, 96);
+    background-color: none;
+    border: none;
+}
+.job-list-item .show-more:hover{
+    background-color: rgb(15, 52, 96);
+    color: white;
+}
+.job-list-item .apply{
+    color: rgb(126, 38, 8);
+    background-color: none;
+    border:none;
+}
+.job-list-item .apply:hover{
+    background-color: rgb(126, 38, 8);
+    color: white;
+}
+.salary{
+    color:rgb(213, 77, 82);
+}
+.location{
+    color:rgb(119, 189, 241);
+}
+.department{
+    color:rgb(104, 133, 193);
+}
+@media screen and (max-width : 600px) {
+    .job-list-item p {
+        font-size: 13px ;
+    }
+    .job-list-item button {
+        font-size: 13px ;
+    }
+    .form label {
+        font-size: 13px ;
+    }
+    .form input {
+        font-size: 13px ;
+    }
+}

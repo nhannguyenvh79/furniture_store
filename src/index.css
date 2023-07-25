@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --1st-color: rgb(0, 0, 0);
+  --2nd-color: rgb(65, 39, 40);
+  --3rd-color: rgb(127, 77, 62);
+  --4th-color: rgb(226, 182, 89);
+  --5th-color: rgb(250, 250, 112);
+  --whitefont-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar{
+  width: 10px;
+}
+body::-webkit-scrollbar-track{
+  background-color: #fafafa;
+}
+body::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+  border-radius: 50px;
+}
+
+body, html {
+  overflow-x: hidden !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+section {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  background-color: none;
+}
+
+
+/*   ---Home Slider---   */
+
+/*   ---Shop Pages---   */
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.filter-bar-contianer .row {
+  flex-wrap: wrap-reverse !important;
+}
+
+@media (max-width:767px) {
+  .filter-bar .row {
+    gap: 20px;
+  }
+}
+
+
+
+@media (max-width:575px) {
+  .cart-content .cart-details h3 {
+      margin: 10px auto;
+  }
+
+  .cart-content .cart-details h4 {
+      margin: 10px auto;
+  }
+}
+
+@media (max-width:767px) {
+  .cart-items .container>.row {
+      flex-wrap: wrap-reverse !important;
+  }
+}
+.cart-items {
+    background: var(--1st-color);
+    height: auto;
+}
+.cart-content-center{
+    padding-top: 4rem;
+}
+.cart-items .cart-total {
+    background-color: white;
+    padding: 20px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.cart-list {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 3px solid var(--whitefont-color);
+    border-radius: 10px;
+}
+
+.cart-list .image-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart-items .cart-content {
+    align-items: flex-end;
+}
+
+.cart-items .cart-details h3 {
+    font-size: 18px;
+    font-weight: bolder;
+    width: 100%;
+    text-align: start;
+    margin-top: 20px;
+    color: var(--1st-color);
+}
+
+.cart-items .cart-details h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 50px;
+    color: var(--whitefont-color);
+    width: 100%;
+}
+
+.cart-items h4 span {
+    color: var(--whitefont-color);
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.removeCart {
+    background: none;
+    font-size: 25px;
+}
+
+.cartControl {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    padding: 0 !important;
+    margin: 20px 0 0;
+}
+
+.cartControl button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: var(--2nd-color);
+    color: var(--whitefont-color);
+}
+
+.incCart {
+    background: none;
+    border: 1px solid rgb(3 0 71 / 9%);
+    color: var(--1st-color);
+}
+
+.desCart {
+    background: #f6f9fc;
+}
+
+.cart-total h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(3 0 71 / 9%);
+    padding-bottom: 10px;
+    color: var(--1st-color);
+    border-bottom: 2px solid var(--1st-color);
+}
+
+.cart-total h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--1st-color);
+}
+
+.cart-total h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--1st-color);
+}
+
+.no-items {
+    color: var(--whitefont-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 130px;
+    border: 2px solid var(--whitefont-color);
+    border-radius: 10px;
+    padding: 3rem 2rem;
+}
+
+.d_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button.delete {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: max-content;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: black;
+}
+
+button.delete ion-icon {
+    font-size: 30px;
+}
+
+
+
+@media (max-width:575px) {
+    .cart-content .cart-details h3 {
+        margin: 10px auto;
+    }
+
+    .cart-content .cart-details h4 {
+        margin: 10px auto;
+    }
+}
+
+@media (max-width:767px) {
+    .cart-items .container>.row {
+        flex-wrap: wrap-reverse !important;
+    }
+}
+/*   ---Cart Page---   */
+.cart-items {
+  height: auto;
+  background-color: white;
+  min-height: 60vh;
+}
+.cart-items .cart-total {
+  background-color: white;
+  padding: 20px;
+  height: 150px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.cart-list {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 3px solid var(--2nd-color);
+  border-radius: 10px;
+}
+
+.cart-list .image-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cart-items .cart-content {
+  align-items: flex-end;
+}
+
+.cart-items .cart-details h3 {
+  font-size: 18px;
+  font-weight: bolder;
+  width: fit-content;
+  text-align: start;
+  margin-top: 20px;
+}
+
+.cart-items .cart-details h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 50px;
+  color: var(--1st-color);
+  width: fit-content;
+}
+
+.cart-items h4 span {
+  color: var(--2nd-color);
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.removeCart {
+  background: none;
+  font-size: 25px;
+}
+
+.cartControl {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  padding: 0 !important;
+  margin: 20px 0 0;
+}
+
+.cartControl button {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: var(--2nd-color);
+  color: var(--whitefont-color);
+}
+
+.incCart {
+  background: none;
+  border: 1px solid rgb(3 0 71 / 9%);
+  color: var(--1st-color);
+}
+
+.desCart {
+  background: #f6f9fc;
+}
+.cart-total h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(3 0 71 / 9%);
+  padding-bottom: 10px;
+  color: var(--1st-color);
+  border-bottom: 2px solid var(--1st-color);
+}
+.cart-total h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--1st-color);
+}
+
+.cart-total h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--1st-color);
+}
+
+.no-items {
+  color: var(--whitefont-color);
+  font-size: 18px;
+  text-transform: uppercase;
+  height: 130px;
+  border: 2px solid var(--whitefont-color);
+  border-radius: 10px;
+  padding: 3rem 2rem;
+}
+.d_flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+button.delete {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: max-content;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+}
+
+button.delete ion-icon {
+  font-size: 30px;
+}
+
+.buy-btn{
+  color: white  ;
+  padding: 5px 10px;
+  background-color: rgba(162, 61, 29, 0.8);
+  border-radius: 5px;
+}
+.buy-btn:hover{
+  background-color: rgba(162, 61, 29, 1);
+}
+
+@media (max-width:575px) {
+  .cart-content .cart-details h3 {
+    margin: 10px auto;
+  }
+
+  .cart-content .cart-details h4 {
+    margin: 10px auto;
+  }
+}
+@media (max-width:767px) {
+  .cart-items .container>.row {
+    flex-wrap: wrap-reverse !important;
+  }
+}
+.buy-information-container input{
+  border: 1px solid gray;
+  padding: 0 5px;
+  margin:  5px 10px;
+  border-radius: 5px;
+}
+.buy-information-container .buy-input {
+  max-width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.buy-information-container .buy-input input{
+  flex: 1 0 auto;
+}

@@ -1,0 +1,53 @@
+.accordation-item{
+    background-color: var(--whitefont-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.accordation-item .question{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.accordation-item .control{
+    font-size: 18px;
+}
+.accordation-item.active button {
+    background-color: var(--2nd-color);
+    color: var(--whitefont-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.answer-wrapper {
+    height: 0;
+    overflow: hidden;
+}
+.answer-wrapper.open {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--whitefont-color);
+    font-weight: 400;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.answer-wrapper .answer{
+    color: var(--2nd-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-transform: initial;
+    text-align:left;
+    font-size: 16px;
+}

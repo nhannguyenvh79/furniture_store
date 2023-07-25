@@ -1,0 +1,59 @@
+.wrapper {
+  text-align: center;
+  background-color: rgba(171, 117, 89, 0.7);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 25px;
+  background: #f3f5f9;
+  margin: 20px auto;
+}
+
+.wrapper .row {
+  justify-content: center;
+  gap: 0px;
+}
+
+.wrapper .feature {
+  padding: 10px;
+  background-color: white;
+  z-index: 2;
+}
+
+.wrapper .feature h3 {
+  font-size: 18px;
+  font-weight: 500;
+  width: fit-content;
+  margin: 0 auto !important;
+
+}
+
+.wrapper p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+.wrapper.background{
+  background-image: url(../../../Images/overlay1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+
+}
+.wrapper.background::before{
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1 ;
+  top: 0;
+  left: 0;
+}

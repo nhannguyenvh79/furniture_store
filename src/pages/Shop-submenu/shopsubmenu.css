@@ -1,0 +1,192 @@
+
+.productsubm-component{
+    background-color: var(--1st-color);
+}
+.productsubm-component {
+    background-color: var(--1st-color);
+    padding: 2rem 2rem;  
+    margin: 2rem;
+}
+
+.productsubm-content{
+    margin: 4rem 2rem 2rem 4rem;
+    padding: 0 10rem;
+    width: 100%;
+}
+.productsubm-content h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--whitefont-color);
+    font-weight: bold;  
+}
+.productsubm-content p{
+    text-align:justify;
+    color: var(--whitefont-color);
+    font-size: 20px;
+}
+/* Banner-submenu */
+.productsubm-banner h1, .productsubm-title h1{
+    background: url('https://png.pngtree.com/background/20210712/original/pngtree-empty-natural-brown-wooden-background-picture-image_1181328.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    padding: 25px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: var(--whitefont-color);
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.productsubm-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.productsubm-product-wrapper{
+    width: 100%;
+}
+.productsubm-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 100%;
+    margin-right: 2rem;
+}
+/* Left-box */
+.productsubm-left-bx{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--1st-color);
+    width: 70%;
+    height: 100%;
+    padding: 0 2rem;
+    box-shadow: white 0px 20px 30px -10px;
+    margin-left: 2rem ;
+    border-radius: 5px;
+}
+.filter-search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 2rem;
+    
+}
+.filter-search .filter{
+    width: 30%;
+}
+.filter-search .search{
+    width: 70%;
+    margin-left: 5px; 
+}
+
+/* Pagination */
+.productsubm-pagination{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+}
+.productsubm-pagination-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none; 
+}
+.productsubm-pagination-item{
+    cursor: pointer; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: transparent;
+}
+.productsubm-page-button{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 1px solid var(--whitefont-color);
+    background-color: var(--whitefont-color);
+    color: var(--1st-color);
+}
+.productsubm-page-button :hover{
+    background-color: var(--1st-color);
+    color: #fff;
+}
+.productsubm-page-button[disabled] {
+    background-color: rgb(209, 199, 199);
+    color: var(--1st-color);  
+}
+/* Right box */
+.productsubm-right-bx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--whitefont-color);
+    width: 30%;
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.productsubm-right-bx h1{
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    border-bottom: 2px solid var(--2nd-color);  
+
+}
+.productsubm-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .productsubm-component {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+        padding: 2rem;
+    }
+    .productsubm-component .subm-content{
+        margin-top: 2rem;
+    }
+
+    .productsubm-content h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .productsubm-content p{
+        padding: 2rem;
+        font-size: 20px;
+    }
+    .productsubm-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .productsubm-left-bx, .productsubm-right-bx{
+        width: 100%;
+    }
+    .productsubm-right-bx{
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,25 @@
+.clock-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.clock-data{
+    text-align: center;
+    padding: 2rem;
+}
+.text-center h1{
+    font-size: 50px;
+    color: var(--whitefont-color);
+    border:none;
+    border-radius: 5px;
+    box-shadow: White 0px 48px 100px 0px;
+}
+.text-center h5{
+    font-size: 30px;
+    color: var(--whitefont-color);
+    background-color: #ffcd4e;
+    border:none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    box-shadow: whitesmoke 0px 20px 30px -10px;
+}

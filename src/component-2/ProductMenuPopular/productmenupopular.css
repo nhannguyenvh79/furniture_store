@@ -1,0 +1,21 @@
+.productmenu-popular{
+    background-color: var(--1st-color);
+}
+.productmpopular-content {
+    background: url('https://previews.123rf.com/images/torsakarin/torsakarin1808/torsakarin180800224/108194646-white-natural-wood-wall-texture-and-background-seamless.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    opacity: 1;
+    height: 100px;
+    width: 100%;
+}
+.productmpopular-content h1{
+    padding: 25px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--2nd-color);
+}
