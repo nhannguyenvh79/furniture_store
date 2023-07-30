@@ -70,10 +70,10 @@ export default function App() {
         return <Route key={el.path} path={el.path} element={el.element} />;
       } else {
         return (
-          <>
-            <Route key={el.path} path={el.path} element={el.element} />
+          <Route key={el.path}>
+            <Route path={el.path} element={el.element} />
             {handleRoute(el.child)}
-          </>
+          </Route>
         );
       }
     });
