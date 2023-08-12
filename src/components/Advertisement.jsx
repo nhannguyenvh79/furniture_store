@@ -12,7 +12,7 @@ export default function Advertisement() {
         if (!modalShow) {
             autoShowAds.current = setTimeout(() => {
                 setModalShow(true);
-            }, 1000);
+            }, 60000);
         } else {
             clearTimeout(autoShowAds.current);
         }

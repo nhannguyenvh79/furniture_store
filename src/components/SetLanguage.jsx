@@ -8,7 +8,7 @@ export default function SetLanguage() {
             style={{
                 position: "fixed",
                 right: 0,
-                top: 60,
+                top: 70,
                 zIndex: 99,
                 border: "none",
             }}
