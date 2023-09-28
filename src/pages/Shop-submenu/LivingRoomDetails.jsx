@@ -91,7 +91,7 @@ export default function LivingRoomDetails() {
           <h1>
             {language === "vie"
               ? "Nội thất phòng khách"
-              : "Livingroom Inferior Products"}
+              : "Livingroom   Products"}
           </h1>
           <p>
             {language === "vie"
@@ -105,12 +105,12 @@ export default function LivingRoomDetails() {
         </div>
         <SliderSubMenu sliderItem={sliderItem} />
       </div>
-      
+
       <div className="productsubm-banner">
         <h1>
           {language === "vie"
             ? "Nội thất phòng khách"
-            : "Our Livingroom Inferior Products"}
+            : "Our Livingroom   Products"}
         </h1>
         <BannerSubmenu itemData={itemData} />
       </div>

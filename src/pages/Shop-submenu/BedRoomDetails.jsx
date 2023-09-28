@@ -82,9 +82,7 @@ export default function BedRoomDetails() {
       <div className="productsubm-component">
         <div className="productsubm-content">
           <h1>
-            {language === "vie"
-              ? "Nội thất phòng ngủ"
-              : "Bedroom Inferior Products"}
+            {language === "vie" ? "Nội thất phòng ngủ" : "Bedroom   Products"}
           </h1>
           <p>
             <b>{language === "vie" ? "Phòng ngủ" : "Bedroom"}</b>{" "}
@@ -97,9 +95,7 @@ export default function BedRoomDetails() {
       </div>
       <div className="productsubm-banner">
         <h1>
-          {language === "vie"
-            ? "Nội thất phòng ngủ"
-            : "Our Bedroom Inferior Products"}
+          {language === "vie" ? "Nội thất phòng ngủ" : "Our Bedroom   Products"}
         </h1>
         <BannerSubmenu itemData={itemData} />
       </div>

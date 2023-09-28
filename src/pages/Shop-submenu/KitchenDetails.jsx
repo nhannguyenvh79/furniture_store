@@ -82,9 +82,7 @@ export default function KitchenDetails() {
       <div className="productsubm-component">
         <div className="productsubm-content">
           <h1>
-            {language === "vie"
-              ? "Nội thất phòng bếp"
-              : "Kitchen Inferior Products"}
+            {language === "vie" ? "Nội thất phòng bếp" : "Kitchen   Products"}
           </h1>
           <p>
             {language === "vie"
@@ -100,9 +98,7 @@ export default function KitchenDetails() {
       </div>
       <div className="productsubm-banner">
         <h1>
-          {language === "vie"
-            ? "Nội thất phòng bếp"
-            : "Our Kitchen Inferior Products"}{" "}
+          {language === "vie" ? "Nội thất phòng bếp" : "Our Kitchen   Products"}{" "}
         </h1>
         <BannerSubmenu itemData={itemData} />
       </div>

@@ -145,3 +145,45 @@ button.add {
 .product:hover .product-like {
     opacity: 1;
 }
+
+@media (max-width: 700px) {
+    .product img {
+        max-width: 200px;
+        max-height: 250px;
+        object-fit: contain;
+        cursor: pointer;
+        padding: 0 0.5rem;
+    }
+    .product-details h3{
+        font-size: 16px;
+    }
+    .product-descrip p{
+        font-size: 12px;
+    }
+    .product-categories p{
+        font-size: 12px;
+    }
+    .price h4{
+        font-size: 16px;
+        margin: 10px;
+    }
+    .productsubm-pagination-section{
+        flex-wrap: wrap;
+        justify-content: start;
+        font-size: 12px;
+        gap: 5px ;
+    }
+    .productsubm-page-button{
+        font-size: 12px;
+    }
+    .newproducts-img {
+        width: 100px;
+        height: 100px;
+    }
+    .newproducts-content p{
+        font-size: 12px;
+    }
+    .newproducts-btn{
+        font-size: 12px;
+    }
+}

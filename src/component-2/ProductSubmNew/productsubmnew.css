@@ -16,6 +16,7 @@
 }
 .newproducts-content{
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: space-between;
     margin-right: 1rem;
@@ -75,5 +76,25 @@
     }
     .newproducts-category button{
         font-size: 16px;
+    }
+}
+@media (max-width: 700px) {
+    .newproducts-img img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .newproducts-content p {
+        font-size: 12px;
+    }
+    .designsubm-title h1{
+        padding: 1rem;
+        font-size: 20px;
+    }
+    .newproducts-price{
+        font-size: 12px;
+    }
+    .newproducts-category button{
+        font-size: 12px;
     }
 }
