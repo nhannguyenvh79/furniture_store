@@ -10,7 +10,7 @@
 }
 
 .designsubm-intro {
-    margin: 4rem 2rem 2rem 4rem;
+    /* margin: 4rem 2rem 2rem 4rem; */
     padding: 0 10rem;
     width: 100%;
 }
@@ -111,12 +111,8 @@
 
 @media (max-width: 768px) {
     .designsubm-topcontainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2rem;
-        padding: 2rem;
+        margin-top: 2em;   
+        padding: 0;
     }
 
     .designsubm-intro h1 {
@@ -127,5 +123,23 @@
         padding: 2rem;
         font-size: 30px;
     }
+    .designsubm-page-button{
+        font-size: 12px;
+    }
     
+}
+
+@media screen and (max-width: 1000px) {
+    .designsubm-intro {
+        margin-top: 3em;  
+        margin: 0;
+        padding: 2rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .designsubm-intro {
+        margin: 0;
+        margin-top: 3em;   
+        padding: 1em;
+    }
 }

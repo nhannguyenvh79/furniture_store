@@ -71,3 +71,37 @@
     color: var(--1st-color);  
 }
 
+@media screen and (max-width: 1000px) {
+    .designmenu-title h1 {
+
+        font-size: 32px;
+
+    }
+    
+    .designmenu-introduction p {
+
+        font-size: 20px;
+
+    }
+    .designmenu-page-button {
+        font-size: 10px;
+
+    }
+}
+@media screen and (max-width: 700px) {
+    .designmenu-title h1 {
+
+        font-size: 28px;
+
+    }
+    
+    .designmenu-introduction p {
+
+        font-size: 14px;
+
+    }
+    .designmenu-page-button {
+        font-size: 10px;
+
+    }
+}

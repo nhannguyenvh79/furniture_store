@@ -60,7 +60,7 @@ function HomeFormEng() {
           <Col
             style={{
               color: "grey",
-              fontSize: "24px",
+              fontSize: "20px",
               fontWeight: "600",
             }}
           >
@@ -259,7 +259,7 @@ function HomeFormVie() {
           <Col
             style={{
               color: "grey",
-              fontSize: "24px",
+              fontSize: "20px",
               fontWeight: "600",
             }}
           >

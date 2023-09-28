@@ -19,3 +19,11 @@
     text-align: center;
     color: var(--2nd-color);
 }
+
+@media screen and (max-width: 700px) {
+    .productmpopular-content h1{
+
+        font-size: 20px;
+
+    }
+}

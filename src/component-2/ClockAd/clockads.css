@@ -23,3 +23,40 @@
     padding: 10px 10px;
     box-shadow: whitesmoke 0px 20px 30px -10px;
 }
+
+@media screen and (max-width: 1400px) {
+    .text-center h1{
+        font-size: 40px;
+
+    }
+    .text-center h5{
+        font-size: 20px;
+
+    }
+}
+@media screen and (max-width: 1000px) {
+    .text-center h1{
+        font-size: 32px;
+
+    }
+    .text-center h5{
+        font-size: 16px;
+
+    }
+    .clock-data{
+        padding: 0.5rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .text-center h1{
+        font-size:24px;
+
+    }
+    .text-center h5{
+        font-size: 12px;
+
+    }
+    .clock-data{
+        padding: 0.5rem;
+    }
+}

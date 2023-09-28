@@ -51,3 +51,20 @@
     text-align:left;
     font-size: 16px;
 }
+
+@media screen and (max-width: 1000px) {
+    .accordation{
+        padding: 1em;
+    }
+    .accordation-item .question{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .accordation{
+        padding: 1em;
+    }
+    .accordation-item .question{
+        font-size: 12px;
+    }
+}

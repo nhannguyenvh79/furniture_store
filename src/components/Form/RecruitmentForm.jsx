@@ -88,7 +88,7 @@ export function RecruitmentFormEng(props) {
           <Col
             style={{
               color: "grey",
-              fontSize: "24px",
+              fontSize: "20px",
               fontWeight: "600",
             }}
           >
@@ -332,7 +332,7 @@ export function RecruitmentFormVie(props) {
           <Col
             style={{
               color: "grey",
-              fontSize: "24px",
+              fontSize: "20px",
               fontWeight: "600",
             }}
           >
